@@ -29,14 +29,14 @@ speed = round(speed,0)
 commandArray = {}
 
 if (difference < 120 and otherdevices_svalues['Pobudka']=='0') then
-	commandArray['OpenURL'] = '192.168.1.2:8080/json.htm?type=command&param=udevice&idx=39&nvalue=0&svalue=0'
+	commandArray['OpenURL'] = '192.168.x.x:8080/json.htm?type=command&param=udevice&idx=x&nvalue=0&svalue=0'
 end
 
 if (otherdevices_svalues['Pobudka']=='10') then
 	local page = tonumber(otherdevices_svalues['Rotary'])
 	if (page<255) then
 		page = tostring(page+speed)
-		commandArray['OpenURL'] = '192.168.1.2:8080/json.htm?type=command&param=udevice&idx=39&nvalue=0&svalue='..page
+		commandArray['OpenURL'] = '192.168.x.x:8080/json.htm?type=command&param=udevice&idx=x&nvalue=0&svalue='..page
 	end
 end
 
