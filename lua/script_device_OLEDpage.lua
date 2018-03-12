@@ -1,5 +1,5 @@
 
-local Adres="192.168.1.10"
+local Adres="192.168.x.x" //change to your address
 local NazwaCzujnika="Salon Parapet"
 local NazwaDrugiego="Gabinet"
 local NazwaTrzeciego="Wnetrze"
