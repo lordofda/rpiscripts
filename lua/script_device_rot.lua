@@ -24,7 +24,7 @@ function round(num, numDecimalPlaces)
   return math.floor(num * mult + 0.5) / mult
 end
 
-local Adres = '192.168.1.12'
+local Adres = '192.168.x.x'
 commandArray = {}
 
 if (devicechanged['Rotary']) then
