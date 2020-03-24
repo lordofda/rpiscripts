@@ -9,3 +9,4 @@ sudo curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 echo "deb https://repos.influxdata.com/debian jessie stable" | tee -a /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get install telegraf -y
+sudo usermod -G video telegraf
