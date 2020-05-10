@@ -11,7 +11,7 @@ curl https://get.pimoroni.com/uptodate | bash
 //curl -sLS https://apt.adafruit.com/add | sudo bash
 #TICK stack elements
 sudo curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
-echo "deb https://repos.influxdata.com/debian jessie stable" | tee -a /etc/apt/sources.list
+echo "deb https://repos.influxdata.com/debian buster stable" | tee -a /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get install telegraf -y
 sudo usermod -G video telegraf
