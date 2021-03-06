@@ -6,7 +6,8 @@ sudo apt-get rpi-update
 #rpi already installed
 sudo apt-get install wget git curl htop ncdu python build-essential python3 -y
 #rest
-sudo apt-get install vim dtrx screen nload fortunes inxi -y
+sudo apt-get install vim screen nload fortunes inxi -y
+sudo apt-get install dtrx -y # could be absent from repo
 curl https://get.pimoroni.com/uptodate | bash
 //curl -sLS https://apt.adafruit.com/add | sudo bash
 #TICK stack elements
