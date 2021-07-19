@@ -8,6 +8,7 @@ sudo apt-get install wget git curl htop ncdu python build-essential python3 -y
 #rest
 sudo apt-get install vim screen nload fortunes inxi -y
 sudo apt-get install dtrx -y # could be absent from repo
+cd ~ && git clone https://github/azlux/log2ram.git && cd log2ram && sudo chmod +x ./install.sh && sudo ./install.sh
 curl https://get.pimoroni.com/uptodate | bash
 //curl -sLS https://apt.adafruit.com/add | sudo bash
 #TICK stack elements
@@ -16,3 +17,4 @@ echo "deb https://repos.influxdata.com/debian buster stable" | sudo tee -a /etc/
 sudo apt-get update
 sudo apt-get install telegraf -y
 sudo usermod -G video telegraf
+sudo swapoff --all
